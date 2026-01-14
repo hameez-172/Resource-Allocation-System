@@ -55,7 +55,7 @@ def task_scheduler(tasks_data, resources):
     return schedule
 
 # --- Streamlit UI --- 
-st.set_page_config(page_title="Optimal Task Scheduler", layout="wide")
+st.set_page_config(page_title="Resource Allocation System", layout="wide")
 st.title("⚙️ Optimal Task Scheduler")
 st.markdown("Yeh system **Discrete Mathematics** ke concepts (Graph Theory aur Combinatorics) par mabni hai. [cite: 1, 7]")
 
@@ -98,4 +98,5 @@ if st.button("Generate Schedule"):
         
         st.plotly_chart(fig, use_container_width=True)
     else:
+
         st.error("Schedule generate nahi ho saka. Baraye maharbani dependencies check karein.")
